@@ -20,6 +20,9 @@ public class Main extends Application {
 		item = new Button("Item");
 		StackPane layout = new StackPane();
 		layout.getChildren().add(item);
+		Scene scene = new Scene(layout,300,250);
+		primaryStage.setScene(scene);
+		primaryStage.show();
 		
 	}
 	
