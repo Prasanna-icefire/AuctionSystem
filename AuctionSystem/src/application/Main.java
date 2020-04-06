@@ -3,7 +3,9 @@ package application;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
@@ -21,24 +23,10 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception
 	{ 
-		Button item = new Button("ITEM");
-		Button exit = new Button("Exit");
-		exit.setOnAction(e -> System.exit(0));
-
-		item.setOnAction(new EventHandler<ActionEvent>()
-		{
-			@Override
-			public void handle(ActionEvent event)
-			{
-				 System.out.println("Hi");
-			}
-			
-		});
-		primaryStage.setTitle("Auction System");
-		VBox layout = new VBox();
-		layout.getChildren().addAll(item,exit);
-		Scene scene = new Scene(layout,300,250);
+		Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
+		Scene scene  = new Scene(root);
 		primaryStage.setScene(scene);
+		primaryStage.setTitle("Auction System");
 		primaryStage.show();
 		
 	}
