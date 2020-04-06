@@ -9,10 +9,10 @@ public class MainController {
 	@FXML
 	private Label msg;
 	
-	public void addItem(ActionEvent event)
+	public void adminlogin(ActionEvent event)
 	{
 		//msg.setText("yolo");
-		System.out.println("Add Item ");
+		System.out.println("To enter starting bidding prices");
 	}
 	
 	@FXML
