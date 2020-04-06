@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 
 
 
@@ -20,8 +20,10 @@ public class Main extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception
-	{
+	{ 
 		Button item = new Button("ITEM");
+		Button exit = new Button("Exit");
+		exit.setOnAction(e -> System.exit(0));
 
 		item.setOnAction(new EventHandler<ActionEvent>()
 		{
@@ -33,8 +35,8 @@ public class Main extends Application {
 			
 		});
 		primaryStage.setTitle("Auction System");
-		StackPane layout = new StackPane();
-		layout.getChildren().add(item);
+		VBox layout = new VBox();
+		layout.getChildren().addAll(item,exit);
 		Scene scene = new Scene(layout,300,250);
 		primaryStage.setScene(scene);
 		primaryStage.show();
