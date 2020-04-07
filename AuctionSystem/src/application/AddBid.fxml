@@ -8,45 +8,49 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="initialBidPane" prefHeight="578.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddBidController">
+<AnchorPane fx:id="initialBidPane" prefHeight="632.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddBidController">
    <children>
-      <ImageView fitHeight="632.0" fitWidth="578.0" layoutX="-9.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="638.0" fitWidth="392.0" layoutX="-9.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@ice-fire.jpg" />
+            <Image url="@wingsoffire.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="106.0" fitWidth="118.0" layoutX="58.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="106.0" fitWidth="118.0" layoutX="58.0" layoutY="112.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@sculpture.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="108.0" fitWidth="129.0" layoutX="46.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="87.0" fitWidth="129.0" layoutX="46.0" layoutY="283.0" opacity="0.93" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@coins.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="106.0" fitWidth="146.0" layoutX="60.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="106.0" fitWidth="146.0" layoutX="60.0" layoutY="426.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@other.png" />
          </image>
       </ImageView>
-      <TextField alignment="CENTER" editable="false" layoutX="30.0" layoutY="86.0" opacity="0.74" prefHeight="26.0" prefWidth="160.0" text="Sculptures" />
-      <TextField alignment="CENTER" editable="false" layoutX="30.0" layoutY="257.0" opacity="0.85" prefHeight="26.0" prefWidth="160.0" text="Coins" />
-      <TextField alignment="CENTER" editable="false" layoutX="30.0" layoutY="400.0" opacity="0.83" prefHeight="26.0" prefWidth="160.0" text="Other?" />
-      <Text fill="#ff7d7d" layoutX="88.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER STARTING BID" wrappingWidth="383.0">
+      <Text fill="#80f7ff" layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENTER STARTING BID" wrappingWidth="330.0">
          <font>
-            <Font size="35.0" />
+            <Font size="29.0" />
          </font>
       </Text>
-      <TextField fx:id="sculpamt" alignment="CENTER" layoutX="231.0" layoutY="145.0" prefHeight="26.0" prefWidth="142.0" promptText="inirial bid in rs" />
-      <TextField fx:id="coinamt" alignment="CENTER" layoutX="231.0" layoutY="300.0" prefHeight="26.0" prefWidth="142.0" promptText="initial bid in rs" />
-      <TextField fx:id="othamt" alignment="CENTER" layoutX="231.0" layoutY="461.0" prefHeight="26.0" prefWidth="142.0" promptText="initial bid in rs" />
-      <Button layoutX="379.0" layoutY="145.0" mnemonicParsing="false" onAction="#getInitSculp" opacity="0.89" text="save" />
-      <Button layoutX="379.0" layoutY="300.0" mnemonicParsing="false" onAction="#getInitCoin" opacity="0.88" text="save" />
-      <Button layoutX="379.0" layoutY="461.0" mnemonicParsing="false" onAction="#getInitOth" opacity="0.89" text="save" />
-      <Button layoutX="465.0" layoutY="532.0" mnemonicParsing="false" onAction="#eexit" prefHeight="26.0" prefWidth="79.0" text="Exit" />
-      <Text fx:id="cointext" fill="#c8ff00" layoutX="231.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Text fx:id="othtext" fill="#6bff0f" layoutX="231.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" />
-      <Text fx:id="scultext" fill="#d1f55b" layoutX="231.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="49.0" />
+      <TextField fx:id="sculpamt" alignment="CENTER" layoutX="189.0" layoutY="126.0" prefHeight="26.0" prefWidth="106.0" promptText="inirial bid in rs" />
+      <TextField fx:id="coinamt" alignment="CENTER" layoutX="192.0" layoutY="303.0" prefHeight="26.0" prefWidth="106.0" promptText="initial bid in rs" />
+      <TextField fx:id="othamt" alignment="CENTER" layoutX="189.0" layoutY="440.0" prefHeight="15.0" prefWidth="106.0" promptText="initial bid in rs" />
+      <Button layoutX="213.0" layoutY="152.0" mnemonicParsing="false" onAction="#getInitSculp" opacity="0.84" text="save" />
+      <Button layoutX="218.0" layoutY="329.0" mnemonicParsing="false" onAction="#getInitCoin" opacity="0.73" text="save" />
+      <Button layoutX="218.0" layoutY="466.0" mnemonicParsing="false" onAction="#getInitOth" opacity="0.89" text="save" />
+      <Button layoutX="213.0" layoutY="558.0" mnemonicParsing="false" onAction="#eexit" prefHeight="26.0" prefWidth="63.0" text="Exit" />
+      <Text fx:id="cointext" fill="#090a03" layoutX="207.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="72.0" />
+      <Text fx:id="othtext" fill="#262f1f" layoutX="219.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="57.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="scultext" fill="#c48493" layoutX="220.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="49.0" />
+      <Button layoutX="80.0" layoutY="558.0" mnemonicParsing="false" onAction="#goHome" opacity="0.95" text="Home" />
+      <TextField alignment="CENTER" editable="false" layoutX="57.0" layoutY="86.0" opacity="0.74" prefHeight="26.0" prefWidth="106.0" text="Sculptures" />
+      <TextField alignment="CENTER" editable="false" layoutX="45.0" layoutY="257.0" opacity="0.85" prefHeight="26.0" prefWidth="129.0" text="Coins" />
+      <TextField alignment="CENTER" editable="false" layoutX="59.0" layoutY="400.0" opacity="0.83" prefHeight="26.0" prefWidth="99.0" text="Other?" />
    </children>
 </AnchorPane>

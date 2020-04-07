@@ -6,10 +6,17 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.shape.Circle;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 public class AddBidController implements Initializable{
 	@FXML
@@ -77,13 +84,35 @@ public class AddBidController implements Initializable{
 	}
 	
 	@FXML
+	public void goHome(ActionEvent event) throws Exception
+	{
+		Parent pane;
+		System.out.println("Bidding go to home");
+		try
+		{
+			pane = (AnchorPane) FXMLLoader.load(getClass().getResource("Main.fxml"));
+			Scene scene = new Scene(pane);
+			Stage curStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+			curStage.setScene(scene);
+			curStage.show();
+		}catch(IOException e)
+		{
+			System.out.println(e);
+		}
+
+	}
+	
+	@FXML
 	public void eexit(ActionEvent event)throws IOException
 	{
 		System.exit(0);
 	}
 
+	@FXML
+	private Circle logo;
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+		
 		// TODO Auto-generated method stub
 		
 	}
