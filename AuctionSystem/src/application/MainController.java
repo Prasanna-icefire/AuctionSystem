@@ -63,6 +63,20 @@ public class MainController implements Initializable {
 	{
 		//msg.setText("yolo");
 		System.out.println("Sold");
+		System.out.println("Bid ");
+		Parent pane;
+		System.out.println("To enter starting bidding prices");
+		try
+		{
+			pane = (AnchorPane) FXMLLoader.load(getClass().getResource("Sale.fxml"));
+			Scene scene = new Scene(pane);
+			Stage curStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+			curStage.setScene(scene);
+			curStage.show();
+		}catch(IOException e)
+		{
+			System.out.println(e);
+		}
 	}
 
 	@Override
