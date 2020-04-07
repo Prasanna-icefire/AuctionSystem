@@ -38,10 +38,24 @@ public class MainController implements Initializable {
 	}
 	
 	@FXML
-	public void bid(ActionEvent event)
+	public void bid(ActionEvent event) throws Exception
 	{
 		//msg.setText("yolo");
 		System.out.println("Bid ");
+		Parent pane;
+		System.out.println("To enter starting bidding prices");
+		try
+		{
+			pane = (AnchorPane) FXMLLoader.load(getClass().getResource("Bidding.fxml"));
+			Scene scene = new Scene(pane);
+			Stage curStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+			curStage.setScene(scene);
+			curStage.show();
+		}catch(IOException e)
+		{
+			System.out.println(e);
+		}
+		
 	}
 	
 	@FXML

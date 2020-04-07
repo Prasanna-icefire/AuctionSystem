@@ -15,7 +15,7 @@
       </ImageView>
     <Button layoutX="85.0" layoutY="89.0" minWidth="61.0" mnemonicParsing="false" onAction="#adminlogin" opacity="0.89" prefHeight="31.0" prefWidth="104.0" text="Admin-login" />
       <Button layoutX="85.0" layoutY="137.0" mnemonicParsing="false" onAction="#bid" opacity="0.89" prefHeight="31.0" prefWidth="104.0" text="Bid" />
-      <Button layoutX="85.0" layoutY="188.0" mnemonicParsing="false" onAction="#sell" opacity="0.88" prefHeight="31.0" prefWidth="104.0" text="Sell" />
+      <Button layoutX="85.0" layoutY="188.0" mnemonicParsing="false" onAction="#sell" opacity="0.88" prefHeight="31.0" prefWidth="104.0" text="Buy!" />
    </children>
    <opaqueInsets>
       <Insets />
