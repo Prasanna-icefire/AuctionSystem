@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
@@ -17,8 +18,6 @@ import javafx.stage.Stage;
 public class MainController implements Initializable {
 	
 	@FXML
-	private Label msg;
-	private AnchorPane rootpane;
 	public void adminlogin(ActionEvent event) throws Exception
 	{
 		//msg.setText("yolo");
@@ -28,8 +27,9 @@ public class MainController implements Initializable {
 		{
 			pane = (AnchorPane) FXMLLoader.load(getClass().getResource("Admin_login.fxml"));
 			Scene scene = new Scene(pane);
-			Stage curStage = (Stage)rootpane.getScene().getWindow();
+			Stage curStage = (Stage)((Node)event.getSource()).getScene().getWindow();
 			curStage.setScene(scene);
+			curStage.show();
 		}catch(IOException e)
 		{
 			
