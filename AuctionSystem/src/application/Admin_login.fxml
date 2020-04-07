@@ -18,8 +18,8 @@
             <Blend />
          </effect>
       </ImageView>
-      <PasswordField alignment="CENTER" layoutX="72.0" layoutY="76.0" prefHeight="33.0" prefWidth="154.0" promptText="Password" />
-      <Button layoutX="112.0" layoutY="132.0" mnemonicParsing="false" opacity="0.82" prefHeight="33.0" prefWidth="74.0" text="Login">
+      <PasswordField fx:id="pass" alignment="CENTER" layoutX="72.0" layoutY="76.0" prefHeight="33.0" prefWidth="154.0" promptText="Password" />
+      <Button layoutX="112.0" layoutY="132.0" mnemonicParsing="false" onAction="#getpassword" opacity="0.82" prefHeight="33.0" prefWidth="74.0" text="Login">
          <font>
             <Font name="Fira Code Regular" size="15.0" />
          </font>

@@ -32,7 +32,7 @@ public class MainController implements Initializable {
 			curStage.show();
 		}catch(IOException e)
 		{
-			
+			System.out.println(e);
 		}
 		
 	}
