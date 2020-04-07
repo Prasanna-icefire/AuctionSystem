@@ -19,11 +19,13 @@ public class AddBidController implements Initializable{
 	@FXML
 	public void getInitSculp(ActionEvent event)throws IOException
 	{
-		sqlconnect();
+		
+		
 		System.out.print("Entered getINIT");
 		String scamt = sculpamt.getText();
 		scultext.setText("Saved");
 		System.out.println(scamt);
+		sqlconnect("SCULPTURE",Float.parseFloat(scamt));
 	}
 	
 	@FXML
@@ -33,10 +35,13 @@ public class AddBidController implements Initializable{
 	@FXML
 	public void getInitCoin(ActionEvent event)throws IOException
 	{
+		
 		System.out.print("Entered getINIT");
 		String coamt = coinamt.getText();
 		cointext.setText("Saved");
 		System.out.println(coamt);
+		sqlconnect("COIN",Float.parseFloat(coamt));
+
 	}
 	
 	@FXML
@@ -46,20 +51,25 @@ public class AddBidController implements Initializable{
 	@FXML
 	public void getInitOth(ActionEvent event)throws IOException
 	{
+	
 		System.out.print("Entered getINIT");
 		String otamt = othamt.getText();
 		othtext.setText("Saved");
 		System.out.println(otamt);
+		sqlconnect("OTHER",Float.parseFloat(otamt));
+
 	}
 	
-	void sqlconnect()
+	void sqlconnect(String str,double val)
 	{
 		try
 		{
-			Class.forName("com.mysql.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","12345678");
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/auction","root","12345678");
 			Statement stmt=con.createStatement();
 			System.out.println("Connected Database");
+			String query = "UPDATE auction SET PRESENT_BID = "+val+" ,STATUS = 'N'"+"WHERE ITEM_TYPE ='"+str+"';";
+			stmt.execute(query);
 		}catch(Exception e)
 		{
 			System.out.println(e);
