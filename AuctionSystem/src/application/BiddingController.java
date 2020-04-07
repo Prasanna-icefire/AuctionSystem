@@ -1,5 +1,6 @@
 package application;
 
-public class BiddingController {
+public class BiddingController
+{
 
 }
