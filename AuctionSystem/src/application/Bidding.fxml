@@ -1,8 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1">
-	<!-- TODO Add Nodes -->
+<AnchorPane prefHeight="469.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="451.0" fitWidth="873.0" layoutX="1.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icefirebidding.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="177.0" fitWidth="137.0" layoutX="352.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sculptures.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="142.0" fitWidth="169.0" layoutX="80.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@oldcoins.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="580.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images.jpeg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="283.0" layoutY="97.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="0.0" />
+      <Separator layoutX="532.0" layoutY="97.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="16.0" />
+      <TextField layoutX="72.0" layoutY="281.0" />
+      <TextField layoutX="72.0" layoutY="339.0" />
+      <TextField alignment="CENTER" layoutX="72.0" layoutY="377.0" promptText="Enter your bid" />
+      <TextField layoutX="327.0" layoutY="283.0" />
+      <TextField layoutX="327.0" layoutY="341.0" />
+      <TextField alignment="CENTER" layoutX="327.0" layoutY="379.0" promptText="Enter your bid" />
+      <TextField layoutX="594.0" layoutY="281.0" />
+      <TextField layoutX="594.0" layoutY="339.0" />
+      <TextField alignment="CENTER" layoutX="594.0" layoutY="377.0" promptText="Enter your bid" />
+      <Text fill="#a80000" layoutX="103.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR BIDDING PAGE!" textAlignment="CENTER" wrappingWidth="667.7294921875">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Text>
+      <Button layoutX="138.0" layoutY="413.0" mnemonicParsing="false" text="Bid" />
+      <Button layoutX="393.0" layoutY="419.0" mnemonicParsing="false" text="Bid" />
+      <Button layoutX="661.0" layoutY="419.0" mnemonicParsing="false" text="Bid" />
+      <Button layoutX="754.0" layoutY="463.0" mnemonicParsing="false" opacity="0.8" prefHeight="43.0" prefWidth="97.0" text="exit" />
+      <Button layoutX="21.0" layoutY="463.0" mnemonicParsing="false" opacity="0.75" prefHeight="43.0" prefWidth="89.0" text="Home" />
+      <Text disable="true" layoutX="73.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAST BID" />
+      <Text layoutX="73.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRESENT BID" />
+      <Text disable="true" fill="#eeeaea" layoutX="327.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAST BID" />
+      <Text fill="#f5e90b" layoutX="327.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRESENT BID" />
+      <Text fill="#fffefd" layoutX="594.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAST BID" />
+      <Text fill="#ae2020" layoutX="594.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRESENT BID" />
+   </children>
 </AnchorPane>
-
