@@ -68,7 +68,7 @@ public class AddBidController implements Initializable{
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/auction","root","12345678");
 			Statement stmt=con.createStatement();
 			System.out.println("Connected Database");
-			String query = "UPDATE auction SET PRESENT_BID = "+val+" ,STATUS = 'N'"+"WHERE ITEM_TYPE ='"+str+"';";
+			String query = "UPDATE auction SET PRESENT_BID = "+val+" ,PAST_BID = "+val+",STATUS = 'N'"+"WHERE ITEM_TYPE ='"+str+"';";
 			stmt.execute(query);
 		}catch(Exception e)
 		{

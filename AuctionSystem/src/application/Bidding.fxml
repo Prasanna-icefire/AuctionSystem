@@ -33,23 +33,23 @@
       </ImageView>
       <Separator layoutX="283.0" layoutY="97.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="0.0" />
       <Separator layoutX="532.0" layoutY="97.0" orientation="VERTICAL" prefHeight="323.0" prefWidth="16.0" />
-      <TextField layoutX="72.0" layoutY="281.0" />
-      <TextField layoutX="72.0" layoutY="339.0" />
-      <TextField alignment="CENTER" layoutX="72.0" layoutY="377.0" promptText="Enter your bid" />
-      <TextField layoutX="327.0" layoutY="283.0" />
-      <TextField layoutX="327.0" layoutY="341.0" />
-      <TextField alignment="CENTER" layoutX="327.0" layoutY="379.0" promptText="Enter your bid" />
-      <TextField layoutX="594.0" layoutY="281.0" />
-      <TextField layoutX="594.0" layoutY="339.0" />
-      <TextField alignment="CENTER" layoutX="594.0" layoutY="377.0" promptText="Enter your bid" />
+      <TextField fx:id="CPastBid" layoutX="72.0" layoutY="281.0" />
+      <TextField fx:id="CPresentBid" layoutX="72.0" layoutY="339.0" />
+      <TextField fx:id="CBid" alignment="CENTER" layoutX="72.0" layoutY="377.0" promptText="Enter your bid" />
+      <TextField fx:id="SPastBid" layoutX="327.0" layoutY="283.0" />
+      <TextField fx:id="SPresentBid" layoutX="327.0" layoutY="341.0" />
+      <TextField fx:id="SBid" alignment="CENTER" layoutX="327.0" layoutY="379.0" promptText="Enter your bid" />
+      <TextField fx:id="OPastBid" layoutX="594.0" layoutY="281.0" />
+      <TextField fx:id="OPresentBid" layoutX="594.0" layoutY="339.0" />
+      <TextField fx:id="OBid" alignment="CENTER" layoutX="594.0" layoutY="377.0" promptText="Enter your bid" />
       <Text fill="#a80000" layoutX="103.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="YOUR BIDDING PAGE!" textAlignment="CENTER" wrappingWidth="667.7294921875">
          <font>
             <Font name="Cantarell Thin" size="46.0" />
          </font>
       </Text>
-      <Button layoutX="138.0" layoutY="413.0" mnemonicParsing="false" text="Bid" />
-      <Button layoutX="393.0" layoutY="419.0" mnemonicParsing="false" text="Bid" />
-      <Button layoutX="661.0" layoutY="419.0" mnemonicParsing="false" text="Bid" />
+      <Button layoutX="138.0" layoutY="413.0" mnemonicParsing="false" onAction="#CshowBid" text="Bid" />
+      <Button layoutX="393.0" layoutY="419.0" mnemonicParsing="false" onAction="#SshowBid" text="Bid" />
+      <Button layoutX="661.0" layoutY="419.0" mnemonicParsing="false" onAction="#OshowBid" text="Bid" />
       <Button layoutX="754.0" layoutY="463.0" mnemonicParsing="false" onAction="#Exxit" opacity="0.8" prefHeight="43.0" prefWidth="97.0" text="exit" />
       <Button layoutX="21.0" layoutY="463.0" mnemonicParsing="false" onAction="#goHome" opacity="0.75" prefHeight="43.0" prefWidth="89.0" text="Home" />
       <Text disable="true" layoutX="73.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAST BID" />
