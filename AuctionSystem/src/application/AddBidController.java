@@ -1,5 +1,5 @@
 package application;
-
+import java.sql.*;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -19,6 +19,7 @@ public class AddBidController implements Initializable{
 	@FXML
 	public void getInitSculp(ActionEvent event)throws IOException
 	{
+		sqlconnect();
 		System.out.print("Entered getINIT");
 		String scamt = sculpamt.getText();
 		scultext.setText("Saved");
@@ -49,6 +50,20 @@ public class AddBidController implements Initializable{
 		String otamt = othamt.getText();
 		othtext.setText("Saved");
 		System.out.println(otamt);
+	}
+	
+	void sqlconnect()
+	{
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql","root","12345678");
+			Statement stmt=con.createStatement();
+			System.out.println("Connected Database");
+		}catch(Exception e)
+		{
+			System.out.println(e);
+		}
 	}
 	
 	@FXML
