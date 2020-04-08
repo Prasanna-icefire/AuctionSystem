@@ -20,3 +20,9 @@ The Customer is required to walk into the store with the paid acknowledgement to
 I had fun learning JavaFX. Hope you all enjoy coding!
 To understand this code,start debugging from the Main function.
 Have a look at the screen shots of the application as well. 
+
+![](https://raw.githubusercontent.com/Prasanna-icefire/AuctionSystem/master/AuctionSystem/MainPage.png)
+ ![](https://raw.githubusercontent.com/Prasanna-icefire/AuctionSystem/master/AuctionSystem/AdminLoginPage.png)
+![](https://raw.githubusercontent.com/Prasanna-icefire/AuctionSystem/master/AuctionSystem/PaymentPage.png)
+![](https://raw.githubusercontent.com/Prasanna-icefire/AuctionSystem/master/AuctionSystem/AdminAddBid.png)
+![](https://raw.githubusercontent.com/Prasanna-icefire/AuctionSystem/master/AuctionSystem/BiddingPage.png)
