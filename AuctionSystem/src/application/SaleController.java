@@ -12,6 +12,7 @@ public class SaleController {
 	
 	@FXML
 	private TextField phno;
+	
 	@FXML
 	
 	private TextField amt;
