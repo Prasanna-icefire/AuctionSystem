@@ -23,13 +23,13 @@ public class BiddingController implements Initializable
 {
 
 	@FXML
-	public void goHome(ActionEvent event) throws Exception
+	public void goHome(ActionEvent event) throws Exception//goes back to the main page
 	{
 		Parent pane;
 		System.out.println("Bidding go to home");
 		try
 		{
-			pane = (AnchorPane) FXMLLoader.load(getClass().getResource("Main.fxml"));
+			pane = (AnchorPane) FXMLLoader.load(getClass().getResource("Main.fxml"));//loads the mainfxml 
 			Scene scene = new Scene(pane);
 			Stage curStage = (Stage)((Node)event.getSource()).getScene().getWindow();
 			curStage.setScene(scene);
@@ -69,10 +69,10 @@ public class BiddingController implements Initializable
 			Statement stmt=con.createStatement();
 			System.out.println("Connected Database");
 			String query1 = "SELECT PRESENT_BID FROM auction WHERE ITEM_TYPE ='"+str+"';";
-			ResultSet rs = stmt.executeQuery(query1);
+			ResultSet rs = stmt.executeQuery(query1);//create an object of result set
 			while (rs.next())
 			{
-                value = rs.getString(1);
+                value = rs.getString(1);//retrieving only value
 			}
 			System.out.println(value);
 		}
@@ -82,7 +82,7 @@ public class BiddingController implements Initializable
 		}
 		return(Double.parseDouble(value));
 	}
-	double sqlPastBid(String str)
+	double sqlPastBid(String str)//gets data from pastbid column of sql
 	{
 		String value = null;
 		try
@@ -123,7 +123,7 @@ public class BiddingController implements Initializable
 	@FXML
 	private void CshowBid(ActionEvent event)throws Exception
 	{	
-		double CPreValue = sqlPresentBid("COIN");//Pre-present
+		double CPreValue = sqlPresentBid("COIN");//Pre-present-used to retrieve value from table
 		String CPreTex = Double.toString(CPreValue);
 		CPresentBid.setText(CPreTex);
 		System.out.print(CPreTex);
