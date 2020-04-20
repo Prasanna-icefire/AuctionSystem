@@ -21,6 +21,7 @@ public class SaleController {
 	{
 		String pno = phno.getText();
 		String am = amt.getText();
+		
 		System.out.println(pno+" "+am);
 		try
 		{
